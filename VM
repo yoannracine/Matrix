@@ -1,0 +1,80 @@
+{
+  "canIpForward": false,
+  "cpuPlatform": "Unknown CPU Platform",
+  "creationTimestamp": "2018-05-23T16:38:30.897-07:00",
+  "deletionProtection": false,
+  "description": "",
+  "disks": [
+    {
+      "autoDelete": true,
+      "boot": true,
+      "deviceName": "instance-2",
+      "guestOsFeatures": [
+        {
+          "type": "VIRTIO_SCSI_MULTIQUEUE"
+        }
+      ],
+      "index": 0,
+      "interface": "SCSI",
+      "kind": "compute#attachedDisk",
+      "licenses": [
+        "projects/ubuntu-os-cloud/global/licenses/ubuntu-1604-xenial"
+      ],
+      "mode": "READ_WRITE",
+      "source": "projects/innate-sunset-187821/zones/us-east1-b/disks/instance-2",
+      "type": "PERSISTENT"
+    }
+  ],
+  "id": "1234999100674950558",
+  "kind": "compute#instance",
+  "labelFingerprint": "42WmSpB8rSM=",
+  "machineType": "projects/innate-sunset-187821/zones/us-east1-b/machineTypes/n1-standard-1",
+  "metadata": {
+    "fingerprint": "QIpQTX_92Xw=",
+    "kind": "compute#metadata"
+  },
+  "name": "instance-2",
+  "networkInterfaces": [
+    {
+      "accessConfigs": [
+        {
+          "kind": "compute#accessConfig",
+          "name": "External NAT",
+          "networkTier": "PREMIUM",
+          "type": "ONE_TO_ONE_NAT"
+        }
+      ],
+      "fingerprint": "TxE6itiZgR0=",
+      "kind": "compute#networkInterface",
+      "name": "nic0",
+      "network": "projects/innate-sunset-187821/global/networks/default",
+      "networkIP": "10.142.0.2",
+      "subnetwork": "projects/innate-sunset-187821/regions/us-east1/subnetworks/default"
+    }
+  ],
+  "scheduling": {
+    "automaticRestart": true,
+    "onHostMaintenance": "MIGRATE",
+    "preemptible": false
+  },
+  "selfLink": "projects/innate-sunset-187821/zones/us-east1-b/instances/instance-2",
+  "serviceAccounts": [
+    {
+      "email": "792397558496-compute@developer.gserviceaccount.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/devstorage.read_only",
+        "https://www.googleapis.com/auth/logging.write",
+        "https://www.googleapis.com/auth/monitoring.write",
+        "https://www.googleapis.com/auth/servicecontrol",
+        "https://www.googleapis.com/auth/service.management.readonly",
+        "https://www.googleapis.com/auth/trace.append"
+      ]
+    }
+  ],
+  "startRestricted": false,
+  "status": "TERMINATED",
+  "tags": {
+    "fingerprint": "42WmSpB8rSM="
+  },
+  "zone": "projects/innate-sunset-187821/zones/us-east1-b"
+}
